@@ -570,3 +570,55 @@ footer{
     }
 
 }
+.whatsapp-float{
+
+position:fixed;
+
+bottom:25px;
+
+right:25px;
+
+width:65px;
+
+height:65px;
+
+border-radius:50%;
+
+background:#25D366;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:30px;
+
+text-decoration:none;
+
+color:white;
+
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+
+z-index:9999;
+}
+
+.whatsapp-float:hover{
+
+transform:scale(1.1);
+}
+
+.card p{
+font-size:1rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+
+outline:3px solid #D4A373;
+}
+
+img{
+max-width:100%;
+}
