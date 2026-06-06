@@ -742,36 +742,33 @@ footer{
    TARJETAS DE TALLERES
 ========================== */
 
-/* ==========================
-   TALLERES
-========================== */
-
 #talleres .cards{
-
     align-items:start;
 }
 
 #talleres .card{
-
     border-top:6px solid #1F4D4D;
-
     display:flex;
-
     flex-direction:column;
-
     justify-content:flex-start;
-
     padding:25px;
-
+    height:auto;
     min-height:unset;
 }
 
 #talleres .card p{
-
     margin-bottom:6px;
 }
 
 #talleres .card button{
-
     margin-top:12px;
+}
+
+/* ==========================
+   MENTORES Y COMUNIDAD
+========================== */
+
+#mentores .card,
+#comunidad .card{
+    height:auto;
 }
