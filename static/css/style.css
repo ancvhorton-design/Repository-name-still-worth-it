@@ -342,9 +342,10 @@ body{
     display:grid;
 
     grid-template-columns:
-    repeat(auto-fit,minmax(300px,1fr));
+    repeat(auto-fit,minmax(280px,1fr));
 
     gap:30px;
+align-items:start;
 }
 
 .card{
@@ -355,11 +356,12 @@ body{
 
     border-radius:20px;
 
-    padding:35px;
+    padding:30px;
 
     box-shadow:0 5px 20px rgba(0,0,0,.08);
 
     transition:.3s;
+height:auto;
 }
 
 .card:hover{
@@ -742,4 +744,28 @@ footer{
     text-align:center;
 
     padding:80px 20px;
+}
+/* ==========================
+   TARJETAS DE TALLERES
+========================== */
+
+#talleres .card{
+
+    min-height:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+}
+
+#talleres .card p{
+
+    margin-bottom:8px;
+}
+
+#talleres .card button{
+
+    margin-top:15px;
 }
