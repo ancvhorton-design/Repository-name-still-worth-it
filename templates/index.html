@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Still Worth It</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            Still Worth It
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#impacto">Impacto</a></li>
+                <li><a href="#como-funciona">Cómo Funciona</a></li>
+                <li><a href="#talleres">Talleres</a></li>
+                <li><a href="#mentores">Mentores</a></li>
+                <li><a href="#pour">POUR</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- HERO -->
+
+    <section id="inicio" class="hero">
+
+        <div class="hero-content">
+
+            <span class="badge">
+                Plataforma de Aprendizaje Intergeneracional
+            </span>
+
+            <h1>
+                Preservando conocimiento,
+                construyendo comunidad.
+            </h1>
+
+            <p>
+
+                Conectamos adultos mayores con nuevas generaciones para
+                compartir conocimientos, oficios y experiencias que merecen
+                seguir vivas.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#talleres" class="btn-primary">
+                    Explorar Talleres
+                </a>
+
+                <a href="#impacto" class="btn-secondary">
+                    Ver Impacto
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- IMPACTO -->
+
+    <section id="impacto" class="section">
+
+        <h2>Impacto Social</h2>
+
+        <div class="stats">
+
+            <div class="stat-box">
+                <h3 class="counter" data-target="1500">0</h3>
+                <p>Participantes Capacitados</p>
+            </div>
+
+            <div class="stat-box">
+                <h3 class="counter" data-target="128">0</h3>
+                <p>Adultos Mayores Integrados</p>
+            </div>
+
+            <div class="stat-box">
+                <h3 class="counter" data-target="45">0</h3>
+                <p>Talleres Impartidos</p>
+            </div>
+
+            <div class="stat-box">
+                <h3 class="counter" data-target="95">0</h3>
+                <p>Nivel de Satisfacción (%)</p>
+            </div>
+
+        </div>
+
+        <br><br>
+
+        <p style="text-align:center;max-width:900px;margin:auto;">
+
+            Still Worth It busca reducir el aislamiento social de los adultos
+            mayores, generar oportunidades económicas mediante la enseñanza
+            de oficios y preservar conocimientos tradicionales para las
+            nuevas generaciones.
+
+        </p>
+
+    </section>
+
+    <!-- COMO FUNCIONA -->
+
+    <section id="como-funciona" class="section">
+
+        <h2>¿Cómo Funciona?</h2>
+
+        <div class="process-grid">
+
+            <div class="process-card">
+                <div class="step">1</div>
+                <h3>Explora</h3>
+                <p>Busca talleres y actividades disponibles.</p>
+            </div>
+
+            <div class="process-card">
+                <div class="step">2</div>
+                <h3>Conecta</h3>
+                <p>Conoce a mentores con décadas de experiencia.</p>
+            </div>
+
+            <div class="process-card">
+                <div class="step">3</div>
+                <h3>Participa</h3>
+                <p>Inscríbete y aprende en comunidad.</p>
+            </div>
+
+            <div class="process-card">
+                <div class="step">4</div>
+                <h3>Comparte</h3>
+                <p>Ayuda a preservar el patrimonio cultural.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TALLERES -->
+
+    <section id="talleres" class="section">
+
+        <h2>Talleres Disponibles</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <div class="icon">🧵</div>
+
+                <h3>Bordado Tradicional</h3>
+
+                <p>
+                    Técnicas artesanales transmitidas por generaciones.
+                </p>
+
+                <button onclick="openModal(
+                'Bordado Tradicional',
+                'Aprende puntadas básicas y avanzadas, diseño de patrones, combinación de colores y técnicas tradicionales mexicanas. Taller de 4 semanas impartido por una maestra artesana con más de 40 años de experiencia.',
+                'María González'
+                )">
+                    Ver detalles
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <div class="icon">🍲</div>
+
+                <h3>Cocina Tradicional Mexicana</h3>
+
+                <p>
+                    Recetas y tradiciones culinarias familiares.
+                </p>
+
+                <button onclick="openModal(
+                'Cocina Tradicional Mexicana',
+                'Descubre recetas regionales mexicanas, preparación de moles, salsas, antojitos y platillos tradicionales transmitidos por generaciones.',
+                'Josefina López'
+                )">
+                    Ver detalles
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <div class="icon">🪚</div>
+
+                <h3>Carpintería Básica</h3>
+
+                <p>
+                    Elaboración y restauración de muebles.
+                </p>
+
+                <button onclick="openModal(
+                'Carpintería Básica',
+                'Aprende el uso seguro de herramientas, tipos de madera, armado de muebles y técnicas de restauración artesanal.',
+                'Roberto Díaz'
+                )">
+                    Ver detalles
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <div class="icon">🌱</div>
+
+                <h3>Huertos Urbanos</h3>
+
+                <p>
+                    Cultiva alimentos en espacios pequeños.
+                </p>
+
+                <button onclick="openModal(
+                'Huertos Urbanos',
+                'Aprende a sembrar hortalizas, plantas aromáticas y alimentos en balcones, patios y espacios reducidos utilizando técnicas sostenibles.',
+                'Elena Martínez'
+                )">
+                    Ver detalles
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- MENTORES -->
+
+    <section id="mentores" class="section">
+
+        <h2>Nuestros Mentores</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <img class="mentor-img"
+                src="https://randomuser.me/api/portraits/women/68.jpg">
+
+                <h3>María González</h3>
+
+                <p>
+                    Especialista en bordado tradicional con más de 45 años de experiencia.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <img class="mentor-img"
+                src="https://randomuser.me/api/portraits/women/60.jpg">
+
+                <h3>Josefina López</h3>
+
+                <p>
+                    Guardiana de recetas familiares y cocina regional mexicana.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <img class="mentor-img"
+                src="https://randomuser.me/api/portraits/men/55.jpg">
+
+                <h3>Roberto Díaz</h3>
+
+                <p>
+                    Carpintero tradicional con más de 50 años de experiencia.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- POUR -->
+
+    <section id="pour" class="section">
+
+        <h2>Metodología POUR</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>👁 Perceptible</h3>
+                <p>Contrastes adecuados e imágenes descriptivas.</p>
+            </div>
+
+            <div class="card">
+                <h3>⌨ Operable</h3>
+                <p>Navegación accesible mediante teclado y controles visibles.</p>
+            </div>
+
+            <div class="card">
+                <h3>🧠 Comprensible</h3>
+                <p>Contenido organizado y fácil de entender.</p>
+            </div>
+
+            <div class="card">
+                <h3>⚙ Robusto</h3>
+                <p>Compatible con diferentes dispositivos y navegadores.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACTO -->
+
+    <section id="contacto" class="section">
+
+        <h2>Contáctanos</h2>
+
+        <form class="contact-form">
+
+            <input
+            type="text"
+            placeholder="Nombre completo">
+
+            <input
+            type="email"
+            placeholder="Correo electrónico">
+
+            <select>
+
+                <option>Taller de interés</option>
+                <option>Bordado Tradicional</option>
+                <option>Cocina Tradicional</option>
+                <option>Carpintería</option>
+                <option>Huertos Urbanos</option>
+
+            </select>
+
+            <textarea
+            rows="5"
+            placeholder="Escribe tu mensaje"></textarea>
+
+            <button type="submit">
+                Enviar Solicitud
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- MODAL -->
+
+    <div id="modal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close" onclick="closeModal()">
+                &times;
+            </span>
+
+            <h2 id="modal-title"></h2>
+
+            <br>
+
+            <p id="modal-description"></p>
+
+            <br>
+
+            <p id="modal-instructor"></p>
+
+            <br>
+
+            <button class="btn-primary">
+                Reservar Lugar
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>Still Worth It</h3>
+
+        <p>
+            Preservando conocimiento y construyendo comunidad.
+        </p>
+
+        <p>
+            Diseño inclusivo basado en la metodología POUR.
+        </p>
+
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+
+</html>
