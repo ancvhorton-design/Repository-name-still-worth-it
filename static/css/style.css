@@ -222,7 +222,7 @@ body{
 
 .section{
 
-    padding:80px 8%;
+    padding:60px 8%;
 }
 
 .section h2{
@@ -345,7 +345,8 @@ body{
     repeat(auto-fit,minmax(280px,1fr));
 
     gap:30px;
-align-items:start;
+
+    align-items:start;
 }
 
 .card{
@@ -356,36 +357,44 @@ align-items:start;
 
     border-radius:20px;
 
-    padding:30px;
+    padding:25px;
 
     box-shadow:0 5px 20px rgba(0,0,0,.08);
 
     transition:.3s;
-height:auto;
+
+    height:auto;
 }
 
 .card:hover{
 
-    transform:translateY(-10px);
+    transform:translateY(-5px);
 }
 
 .icon{
 
     font-size:3rem;
 
-    margin-bottom:20px;
+    margin-bottom:15px;
 }
 
 .card h3{
 
-    margin-bottom:15px;
+    margin-bottom:10px;
 
     color:#1F4D4D;
 }
 
+.card p{
+
+    font-size:1rem;
+
+    margin-bottom:8px;
+}
+
 .card button{
 
-    margin-top:20px;
+    margin-top:15px;
 
     background:#1F4D4D;
 
@@ -399,16 +408,14 @@ height:auto;
 
     cursor:pointer;
 }
-
 /* ==========================
    MENTORES
 ========================== */
-
 .mentor-img{
 
-    width:120px;
+    width:160px;
 
-    height:120px;
+    height:160px;
 
     border-radius:50%;
 
@@ -520,20 +527,6 @@ height:auto;
     cursor:pointer;
 }
 
-/* ==========================
-   FOOTER
-========================== */
-
-footer{
-
-    background:#1F4D4D;
-
-    color:white;
-
-    text-align:center;
-
-    padding:50px 20px;
-}
 
 /* ==========================
    RESPONSIVE
@@ -749,23 +742,36 @@ footer{
    TARJETAS DE TALLERES
 ========================== */
 
+/* ==========================
+   TALLERES
+========================== */
+
+#talleres .cards{
+
+    align-items:start;
+}
+
 #talleres .card{
 
-    min-height:auto;
+    border-top:6px solid #1F4D4D;
 
     display:flex;
 
     flex-direction:column;
 
     justify-content:flex-start;
+
+    padding:25px;
+
+    min-height:unset;
 }
 
 #talleres .card p{
 
-    margin-bottom:8px;
+    margin-bottom:6px;
 }
 
 #talleres .card button{
 
-    margin-top:15px;
+    margin-top:12px;
 }
